@@ -5,4 +5,6 @@ This will be where I will save my beginner projects. As I feel more confident in
 
 
 -------lasciate ogni speranza, voi ch'entrate-------
-https://pin.it/4UGHJle
+
+
+https://c.tenor.com/Hn4RPDx7TtYAAAAC/joker-the-dark-knight.gif
