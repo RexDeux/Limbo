@@ -1,21 +1,33 @@
-require_relative 'black_jack'
+require_relative "croupier"
 
-def state_of_the_game(player_score, bank_score)
-  "Your score is #{player_score}, bank is #{bank_score}"
-end
 
-def end_game_message(player_score, bank_score)
-  if player_score > 21
-    "Over 21, you lose!"
-  elsif player_score == 21
-    "BLACKJACK GODDAMNIT!YEEE-HAW!"
-  elsif player_score == bank_score
-    "Push!"
-  elsif player_score > bank_score
-    "You beat the bank fella, kudos to you, you win!"
-  elsif bank_score == 21
-    "BLACKJACK FOR THE BANK FELLA"
-  else bank_score > player_score  
-    "The bank beats you! You lose."
-  end  
+puts "****Ladies and Gentleman welcome to our very one version of James Bond\'s Casino Royale****"
+
+#Pick the bank score and store it in a variable
+bank_score = pick_bank_score
+#Player starts at 0
+player_score = 0
+running = true
+
+while running
+    # Ask the player for a card
+    puts "Card? 'y' or 'yes' to get a new card"
+    # Get the player's answer and store it in a variable
+    player_answer = gets.chomp
+    # If the answer is 'y' or 'yes':
+    if %w[y yes].include?(player_answer)
+        # Pick a player card and add it to the player score
+        player_score += pick_player_card
+        # Display the state of the game
+        puts state_of_the_game(player_score, bank_score)
+        running = player_score < 21
+    else
+        running = false
+    end
+    # Go back to ask the player for a card
 end
+# Print the end of the game message
+
+puts end_game_message(player_score, bank_score)
+# TODO: make the user play from terminal in a while loop that will stop
+#       when the user will not be asking for  a new card
