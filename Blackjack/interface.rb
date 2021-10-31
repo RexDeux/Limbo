@@ -1,8 +1,8 @@
 require_relative "croupier"
 
 
-puts "****Ladies and Gentleman welcome to our very one version of James Bond\'s Casino Royale****"
-
+puts "****Ladies and Gentleman welcome to our very own version of James Bond\'s Casino Royale****"
+<
 #Pick the bank score and store it in a variable
 bank_score = pick_bank_score
 #Player starts at 0
