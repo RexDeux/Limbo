@@ -57,7 +57,7 @@ else
     puts "It seems the horses have one more race in them sir. Would you like to go again [y/n]"
     answer = gets.chomp
     if answer == "y"
-        puts "Godpseed sire"
+        puts "Godspeed sire"
     elseif answer == "n"   
     puts "Best of luck sire, bye"
     else
