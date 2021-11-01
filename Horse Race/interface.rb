@@ -1,5 +1,3 @@
-require_relative 'bank.rb'
-require_relative 'horse.rb'
 
 # TODO: you can build your horse race program here!
 run = true
